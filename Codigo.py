@@ -9,27 +9,27 @@ class Ui_LCreates(object):
         email = self.email.text()
         senha = self.senha.text()
         enviado = self.resumo.text()
-        rec_email = "lucaslcreates@gmail.com"
+        rec_email = "destinatario@gmail.com"
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         while(True):
-            if email == 'lucaslcreates@gmail.com' and senha == '040506ok':
+            if email == 'email1@gmail.com' and senha == 'senha1':
                 self.enviado.show()
                 server.login(email, senha)
                 server.sendmail(email, rec_email, enviado)
                 email = ""
-            elif email == 'laurinha.coelho16@gmail.com' and senha == 'arteeminhavida':
+            elif email == 'email2@gmail.com' and senha == 'senha2':
                 print('enviado de laura')
                 self.enviado.show()
                 server.login(email, senha)
                 server.sendmail(email, rec_email, enviado, data)
                 break
-            elif email == 'gustavo.de.carvalho.cypriano@gmail.com' and senha == 'bodeloiro123':
+            elif email == 'email3@gmail.com' and senha == 'senha3':
                 self.enviado.show()
                 server.login(email, senha)
                 server.sendmail(email, rec_email, enviado, data)
                 break
-            elif email == 'gustavo.de.carvalho.cypriano@gmail.com' and senha == 'bodeloiro123':
+            elif email == 'email4@gmail.com' and senha == 'senha4':
                 self.enviado.show()
                 server.login(email, senha)
                 server.sendmail(email, rec_email, enviado, data)
